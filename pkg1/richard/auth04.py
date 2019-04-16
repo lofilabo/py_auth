@@ -9,6 +9,7 @@ from flask.json import jsonify
 import os
 
 app = Flask(__name__)
+app.secret_key = "inrvituluie44lueip"
 
 import os
 os.environ['OAUTHLIB_INSECURE_TRANSPORT'] = '1'
@@ -69,7 +70,7 @@ if __name__ == "__main__":
     # This allows us to use a plain HTTP callback
     os.environ['OAUTHLIB_INSECURE_TRANSPORT'] = "1"
 
-    app.secret_key = "inrvituluie44lueiptd;owaxyuvok;,oicsuygscioivrd;o"
+    app.secret_key = "inrvituluie44lueip"
     app.run(debug=True)
 if __name__ == '__main__':
     pass
